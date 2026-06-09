@@ -1,2 +1,265 @@
 # Signs-of-God-Speaking.
 5 Signs that the thought in your head is actually God speaking.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Signs That God Is Speaking To You</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --gold:    #B8914A;
+      --gold-lt: #D4AF72;
+      --cream:   #FAF7F2;
+      --ink:     #1C1915;
+      --muted:   #7A6F62;
+      --rule:    #E0D5C5;
+    }
+
+    body {
+      background: var(--cream);
+      color: var(--ink);
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      min-height: 100vh;
+      padding: 0;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      background: var(--ink);
+      padding: 80px 24px 64px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 0%, #3a2e1a 0%, transparent 70%);
+    }
+
+    .hero-eyebrow {
+      font-family: 'Jost', sans-serif;
+      font-weight: 500;
+      font-size: 0.65rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 28px;
+      position: relative;
+    }
+
+    .hero-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(2.4rem, 6vw, 4.2rem);
+      line-height: 1.12;
+      color: #FAF7F2;
+      position: relative;
+      max-width: 680px;
+      margin: 0 auto 32px;
+    }
+
+    .hero-title em {
+      font-style: italic;
+      color: var(--gold-lt);
+    }
+
+    .hero-rule {
+      width: 48px;
+      height: 1px;
+      background: var(--gold);
+      margin: 0 auto;
+      position: relative;
+    }
+
+    /* ── INTRO ── */
+    .intro {
+      max-width: 640px;
+      margin: 56px auto 0;
+      padding: 0 24px;
+      text-align: center;
+    }
+
+    .intro p {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.75;
+      color: var(--muted);
+    }
+
+    /* ── SIGNS LIST ── */
+    .signs {
+      max-width: 720px;
+      margin: 64px auto 80px;
+      padding: 0 24px;
+    }
+
+    .sign {
+      display: grid;
+      grid-template-columns: 56px 1fr;
+      gap: 0 28px;
+      margin-bottom: 56px;
+      align-items: start;
+    }
+
+    .sign:not(:last-child) {
+      padding-bottom: 56px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .sign-number {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3.2rem;
+      font-weight: 300;
+      color: var(--gold);
+      line-height: 1;
+      padding-top: 4px;
+      text-align: right;
+    }
+
+    .sign-body {}
+
+    .sign-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.45rem;
+      font-weight: 600;
+      line-height: 1.3;
+      color: var(--ink);
+      margin-bottom: 14px;
+    }
+
+    .sign-text {
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      font-size: 0.95rem;
+      line-height: 1.85;
+      color: #4A4037;
+    }
+
+    .sign-text + .sign-text {
+      margin-top: 10px;
+    }
+
+    .verse {
+      display: inline-block;
+      margin-top: 14px;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border-bottom: 1px solid var(--gold-lt);
+      padding-bottom: 2px;
+    }
+
+    /* ── CLOSING ── */
+    .closing {
+      background: var(--ink);
+      padding: 64px 24px;
+      text-align: center;
+    }
+
+    .closing-quote {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.3rem, 3vw, 1.9rem);
+      font-weight: 300;
+      font-style: italic;
+      color: var(--gold-lt);
+      max-width: 580px;
+      margin: 0 auto 20px;
+      line-height: 1.6;
+    }
+
+    .closing-ref {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    @media (max-width: 480px) {
+      .sign { grid-template-columns: 40px 1fr; gap: 0 16px; }
+      .sign-number { font-size: 2.4rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <p class="hero-eyebrow">A Spiritual Guide</p>
+    <h1 class="hero-title">Signs That God Is <em>Really</em> Speaking to You</h1>
+    <div class="hero-rule"></div>
+  </header>
+
+  <section class="intro">
+    <p>Learning to recognise God's voice is one of the most important journeys a believer can take. These five signs can help you discern when it is truly Him speaking.</p>
+  </section>
+
+  <section class="signs">
+
+    <article class="sign">
+      <div class="sign-number">1</div>
+      <div class="sign-body">
+        <h2 class="sign-title">The thought comes suddenly, in the middle of many other thoughts.</h2>
+        <p class="sign-text">When you read Ezra 7:27, you realise that God actually places things in our hearts — just as He did for the king. A divine thought often arrives unexpectedly, cutting through the noise of a busy mind with quiet clarity.</p>
+        <span class="verse">Ezra 7:27</span>
+      </div>
+    </article>
+
+    <article class="sign">
+      <div class="sign-number">2</div>
+      <div class="sign-body">
+        <h2 class="sign-title">The thought keeps returning, no matter how much you try to ignore it.</h2>
+        <p class="sign-text">In 1 Samuel 3:8, God called Samuel a third time — first, second, and third. Persistence is a hallmark of His voice. Satan can also be insistent, but his thoughts are marked by heaviness and despair.</p>
+        <p class="sign-text">One key to remember: God's thoughts will never contradict His written Word. To master His audible voice, you must first master Scripture. Time spent in the Bible trains your spiritual ears to recognise God's voice amid the many others competing for your attention.</p>
+        <span class="verse">1 Samuel 3:8</span>
+      </div>
+    </article>
+
+    <article class="sign">
+      <div class="sign-number">3</div>
+      <div class="sign-body">
+        <h2 class="sign-title">The voice begins to push you toward something good.</h2>
+        <p class="sign-text">James 1:13 reminds us that God will never lead you to act outside His will. The prompting often surfaces as an idea — a gentle but persistent nudge toward what is right, wholesome, and life-giving.</p>
+        <span class="verse">James 1:13</span>
+      </div>
+    </article>
+
+    <article class="sign">
+      <div class="sign-number">4</div>
+      <div class="sign-body">
+        <h2 class="sign-title">The voice carries a very strong sense of urgency.</h2>
+        <p class="sign-text">Jeremiah 20:9 describes a fire shut up in the bones — an inner compulsion that cannot be contained. When God truly speaks, there is often an urgency that makes it difficult to remain still or silent.</p>
+        <span class="verse">Jeremiah 20:9</span>
+      </div>
+    </article>
+
+    <article class="sign">
+      <div class="sign-number">5</div>
+      <div class="sign-body">
+        <h2 class="sign-title">God begins to confirm the thought in unexpected ways.</h2>
+        <p class="sign-text">Confirmation rarely arrives in the way you expect. It may come through a person who speaks to you about the very same thing, or through someone who shares a dream that mirrors your own impression. God confirms His word through multiple, independent channels.</p>
+        <span class="verse">Judges 7:13–14</span>
+      </div>
+    </article>
+
+  </section>
+
+  <footer class="closing">
+    <p class="closing-quote">"My sheep hear my voice, and I know them, and they follow me."</p>
+    <p class="closing-ref">John 10:27</p>
+  </footer>
+
+</body>
+</html>
